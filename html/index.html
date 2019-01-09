@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19264112-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-19264112-7');
+</script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Tag the Web</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Theme CSS -->
+        <link href="css/freelancer.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="page-top" class="index">
+        <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">Tag the Web</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Try it out</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- Header -->
+        <header>
+            <div class="container" id="maincontent" tabindex="-1">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="img-responsive" src="img/profile.png" alt="">
+                        <div class="intro-text">
+                            <h1 class="name">Tag the Web</h1>
+                            <hr class="star-light">
+                            <span class="skills"> Classifying the whole Web with the Wisdom of the Crowds and Linked Open Data.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Portfolio Grid Section -->
+        <section id="portfolio">
+            <div class="container" id="about">
+                <!--  <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <p>The main purpose of the Tag The Web project is to create a universal classification on the Web based on the common sense rather than on a traditional classification system created by domain experts. That is, we believe it is easier to an ordinary user access and retrieve information from a Web created by people to people rather than by experts. </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Tag the Web is a project that aims to create a common sense classification for the whole Web based on the concepts of Wisdom of the Crowds and Linked Open Data.
+                        The proposed method is a general purpose classification that is able to classify any text-based content on the Web be it scientific articles or even tweets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class='success'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Tag your document</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 ">
+                                    <label for="sel1">Enter a plain text or an accessible URL</label>
+                                    <textarea  class="form-control" placeholder="Enter your text or URL" id="text" required data-validation-required-message="Please enter some text or an URL."> </textarea>
+                                    <label for="sel1">Select a language</label>
+                                    <select class="form-control" id="annotation_language">
+                                        <option value = "en">English</option>
+                                        <option value = "de">German</option>
+                                        <option value = "nl">Dutch</option>
+                                        <option value = "fr">French</option>
+                                        <option value = "it">Italian</option>
+                                        <option value = "ru">Russian</option>
+                                        <option value = "es">Spanish</option>
+                                        <option value = "pt">Portuguese</option>
+                                        <option value = "hu">Hungarian</option>
+                                        <option value = "tr">Turkish</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12 text-center">
+                                    <button type="submit" class="btn btn-success btn-lg"  id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Tagging">Tag it</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="fingerPrintModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-megamenu">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myModalLabel">That's your tag</h4>
+                        <p>Here you can see the influence of each Wikipedia Top Category in the composition of your tag.</p>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div id="chart_div"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <img id='qr_tag' src="http://tagtheweb.com.br/qrcode/php/qr_img.php?d=%27oi" style="width:200px;height:200px;">
+                                    <div class="acl-0"><i ng-class="{'icon-link': canvas.acl == 0 || !canvas.acl, 'icon-picture': canvas.acl == 1, 'icon-lock': canvas.acl == 2}" class="icon-link"></i>&nbsp;tagtheweb.com.br/tags/n7kN3</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            </div> <!-- /#myModal -->
+            <!-- Footer -->
+            <footer class="text-center" style="display:none">
+                <div class="footer-above">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col col-md-4">
+                                <h3>Location</h3>
+                                <p>3481 Melrose Place
+                                <br>Beverly Hills, CA 90210</p>
+                            </div>
+                            <div class="footer-col col-md-4">
+                                <h3>Around the Web</h3>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-col col-md-4">
+                                <h3>About Freelancer</h3>
+                                <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Tag the Web</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-below">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                Copyright &copy; Your Website 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+            <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+                <a class="btn btn-primary" href="#page-top">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+            <!-- jQuery -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="https://d3js.org/d3.v3.min.js"></script>
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+            <script src="js/graph.js"></script>
+            <!-- Contact Form JavaScript -->
+            <script src="js/jqBootstrapValidation.js"></script>
+            <script src="js/getFingerprint.js"></script>
+            <!-- Theme JavaScript -->
+            <script src="js/freelancer.min.js"></script>
+        </body>
+    </html>
